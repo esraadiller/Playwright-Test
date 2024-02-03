@@ -141,9 +141,10 @@ test.describe('Item', () => {
     await expect(secondTodo).not.toHaveClass('completed');
     await secondTodo.getByRole('checkbox').check();
 
-    
+
     // Assert completed class.
     await expect(firstTodo).toHaveClass('completed');
+    
     await expect(secondTodo).toHaveClass('completed');
   });
 
