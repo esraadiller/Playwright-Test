@@ -144,7 +144,6 @@ test.describe('Item', () => {
 
     // Assert completed class.
     await expect(firstTodo).toHaveClass('completed');
-    
     await expect(secondTodo).toHaveClass('completed');
   });
 
