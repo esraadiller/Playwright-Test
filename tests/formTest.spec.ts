@@ -9,7 +9,7 @@ test("Form Test", async ({ page }) => {
   await form.navigate(appUrl);
 
   await form.enterFirstName("Esra");
-  await form.enterLastName("adiller");
-
+  await form.enterLastName("adiller");  
+  
   expect(page.url()).toBe(appUrl);
 });
